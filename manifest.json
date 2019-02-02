@@ -1,0 +1,24 @@
+{
+	"manifest_version": 2,
+	"name": "YouTube Genius",
+	"author": "Muhammad Amer",
+	"description": "Add lyrics to song descriptions on YouTube",
+	"version": "1.0",
+
+	"content_scripts": [
+  {
+    "matches": ["https://www.youtube.com/*"],
+    // "run_at": "document_idle",
+    "js": ["jquery-3.3.1.js", "content.js"]
+  	}
+],
+
+	"permissions": [
+		"https://www.youtube.com/*",
+		"https://www.google.com/*",
+		"tabs",
+		"activeTab", 
+		"webNavigation"
+	]
+
+}
